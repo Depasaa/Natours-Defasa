@@ -1,7 +1,10 @@
-@keyframes moveInRight {
+// suppose ami 2sec animation dite cai. so 2sec er upor base kore 0% 80% esob hobe. oi 2sec e ami animation kemon cai seta
+@keyframes moveInLeft {
+  /* moveInLeft er jaygay any name use korte parbo */
   0% {
     opacity: 0;
-    transform: translateX(10rem);
+    /* transform: translateX(-100px) rotate(0deg); */
+    transform: translateX(-10rem);
   }
 
   80% {
@@ -14,47 +17,26 @@
   }
 }
 
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  80% {
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
 @keyframes moveInBottom {
   0% {
     opacity: 0;
-    transform: translateY(10rem);
-  }
-
-  80% {
-    transform: translateY(1rem);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
-}
-
-@keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-10rem);
-  }
-
-  80% {
-    transform: translateX(-1rem);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
-}
-
-
-@keyframes navShow {
-  0% {
-    opacity: 0;
-    transform: translateX(-10rem);
-  }
-
-  80% {
-    transform: translateX(-1rem);
+    transform: translateY(3rem);
   }
 
   100% {
