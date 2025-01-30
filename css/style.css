@@ -1585,7 +1585,7 @@ only screen and (hover: none) {
     color: #eeeeeeeb;
     letter-spacing: 0.5px;
     word-spacing: 1px;
-    text-align: center; /* Semua elemen dalam footer akan berada di tengah */
+    text-align: center;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -1596,7 +1596,7 @@ only screen and (hover: none) {
 
 .footer__logo-box {
     text-align: center;
-    margin-bottom: 3rem; /* Mengurangi margin agar lebih rapat */
+    margin-bottom: 3rem;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -1610,16 +1610,19 @@ only screen and (hover: none) {
     height: auto;
 }
 
-/* COPYRIGHT: Dipindahkan ke bawah logo, di-center, dan dihapus garisnya */
+/* COPYRIGHT: Dipindahkan ke bawah logo, di-center, diberi batas agar tidak mepet */
 .footer__copyright {
-    padding-top: 1rem; /* Mengurangi padding agar lebih dekat */
+    padding-top: 1rem;
     width: 80%;
+    max-width: 100ch; /* Batasi lebar teks agar tidak terlalu panjang */
     margin: 0 auto;
+    padding: 0 2rem; /* Beri sedikit padding kiri dan kanan */
+    line-height: 1.6; /* Tambahkan jarak antar baris agar lebih rapi */
 }
 
-/* NAVIGATION: Dipindahkan ke bawah copyright, di-center, dan dihapus garisnya */
+/* NAVIGATION: Dipindahkan ke bawah copyright dan di-center */
 .footer__navigation {
-    padding-top: 1rem; /* Mengurangi padding agar lebih dekat */
+    padding-top: 1rem;
     text-align: center;
 }
 
@@ -1648,7 +1651,7 @@ only screen and (hover: none) {
     transition: all 0.2s ease-in-out;
     padding: 0.4rem;
     border-radius: 1.5rem;
-    border: 1px solid transparent; /* Menghapus border */
+    border: 1px solid transparent;
 }
 
 .footer__link:hover,
@@ -1665,6 +1668,15 @@ only screen and (hover: none) {
         text-align: center;
     }
 }
+
+@media only screen and (max-width: 56.25em) {
+    .footer__copyright {
+        width: 100%;
+        max-width: 90%;
+        float: none;
+    }
+}
+
 
 
 @media only screen and (max-width: 56.25em) {
